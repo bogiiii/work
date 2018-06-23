@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>東祿建築</title>
+	<meta name="description" content="東祿建築">
+
+
+	<meta name="author" content="東祿建築">
+	<meta name="description" content="東祿建築" />
+	<meta property="og:title" content="東祿建築"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="/image/share.jpg"/>
+	<meta property="og:url" content="#"/>
+	<meta property="og:image:width" content="484">
+	<meta property="og:image:height" content="252">
+	<meta property="og:site_name" content="東祿建築" />
+	<!-- Social metadata -->
+
+	<meta itemprop="name" content="東祿建築">
+	<meta itemprop="image" content="/image/share.jpg">
+	<meta itemprop="description" content="東祿建築">
+
+
+	<!-- Fav and touch icons -->
+	<link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
+	<link rel="bookmark" href="image/favicon.ico" type="image/x-icon" />
+	<link href"image/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+	<link rel="shortcut icon" href="image/favicon.ico" type="image/vnd.microsoft.icon">
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- CSS -->
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/burger.css">
+
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/burger.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+        var wow = new WOW(
+		  {
+		    boxClass:     'wow',      // 要套用WOW.js縮需要的動畫class(預設是wow)
+		    animateClass: 'animated', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+		    offset:       200,          // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+		    mobile:       true,       // 手機上是否要套用動畫 (預設是true)
+		    live:         true,       // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+		    callback:     function(box) {
+		      // 當每個要開始時, 呼叫這裡面的內容, 參數是要開始進行動畫特效的element DOM
+		    },
+		    scrollContainer: null // 可以設定成只套用在某個container中捲動才呈現, 不設定就是整個視窗
+		  }
+		);
+		wow.init();
+    </script>
+</head>
+<body id="contact">
+	<nav>
+		<div class="mobile-nav">
+		    <div class="b-nav">
+		        <ul>
+		            <li><a class="b-link" href="about.html">公司沿革</a></li>
+		            <li><a class="b-link" href="index.html#section-works">最新推案</a></li>
+		            <li><a class="b-link" href="project.html">建築作品</a></li>
+		            <li><a class="b-link" href="construction.html">營造事業</a></li>
+		            <li><a class="b-link b-link--active">聯絡</a></li>
+		            <li><a class="btn" href="#"><i class="ic_music-on"></i></a></li>
+		        </ul>
+		    </div>
+	        <!-- Burger-Icon -->
+	        <div class="b-container">
+		        <div class="b-menu">
+		            <div class="b-bun b-bun--top"></div>
+		            <div class="b-bun b-bun--mid"></div>
+		            <div class="b-bun b-bun--bottom"></div>
+		        </div>
+	          <!-- Burger-Brand -->
+	          <a href="index.html" class="b-brand">HOME</a>
+	        </div>
+		  </div>
+	</nav>
+	<div class="main">
+		<section id="page-contact">
+			<div class="title">
+				<img src="image/img_title_contact.png" class="img-responsive">
+			</div>
+			<div class="content">
+				<p>東祿建築團隊感謝您。任何關於您對東祿建案需要服務的地方<br/>請在下方留下您的資訊與留言，我們會儘速與您聯絡。</p>
+				<form class="row">
+					<div class="form-group col-xs-12 col-sm-6">
+						<label for="InputName">姓名 / 公司</label>
+						<input type="text" class="form-control" id="InputName">
+					</div>
+					<div class="form-group col-xs-12 col-sm-6">
+						<label for="InputTel">電話</label>
+						<input type="tel" class="form-control" id="exampleInputPassword1">
+					</div>
+					<div class="form-group col-xs-12 col-sm-6">
+						<label for="InputEmail1">電子信箱</label>
+						<input type="email" class="form-control" id="InputEmail1">
+					</div>
+					<div class="form-group col-xs-12 col-sm-6">
+						<a href="#" target="_blank" class="contact-btn">
+							<img src="image/btn_fb_brw.png" class="img-responsive"/>
+						</a>
+						<a href="#" class="contact-btn">
+							<img src="image/btn_home_brw.png" class="img-responsive"/>
+						</a>
+					</div>
+					<div class="form-group col-xs-12">
+						<label for="InputEmail1">留言</label>
+						<textarea class="form-control" rows="3"></textarea>
+					</div>
+					<div class="col-xs-12">
+						<button type="submit" class="btn btn-default">SEND</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+	<section id="section-footer">
+		<div class="content row">
+			<div class="col-xs-12 col-sm-6">
+				<p class="text-title">INFORMATION</p>
+				<hr/>
+				<p>東祿建築<br/>台北市中山區中山北路二段126之3號9樓</p>
+				<a href="tel:072159900">07-2159900</a>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.1910528174053!2d121.52051681465426!3d25.061512883959434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9439fee2baf%3A0x77efdb4c475e292d!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDkuK3lsbHljJfot6_kuozmrrUxMjbomZ85!5e0!3m2!1szh-TW!2stw!4v1529736637150" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>

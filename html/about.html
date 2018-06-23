@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>東祿建築</title>
+	<meta name="description" content="東祿建築">
+
+
+	<meta name="author" content="東祿建築">
+	<meta name="description" content="東祿建築" />
+	<meta property="og:title" content="東祿建築"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="/image/share.jpg"/>
+	<meta property="og:url" content="#"/>
+	<meta property="og:image:width" content="484">
+	<meta property="og:image:height" content="252">
+	<meta property="og:site_name" content="東祿建築" />
+	<!-- Social metadata -->
+
+	<meta itemprop="name" content="東祿建築">
+	<meta itemprop="image" content="/image/share.jpg">
+	<meta itemprop="description" content="東祿建築">
+
+
+	<!-- Fav and touch icons -->
+	<link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
+	<link rel="bookmark" href="image/favicon.ico" type="image/x-icon" />
+	<link href"image/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+	<link rel="shortcut icon" href="image/favicon.ico" type="image/vnd.microsoft.icon">
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- CSS -->
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/burger.css">
+
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/burger.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+        var wow = new WOW(
+		  {
+		    boxClass:     'wow',      // 要套用WOW.js縮需要的動畫class(預設是wow)
+		    animateClass: 'animated', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+		    offset:       200,          // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+		    mobile:       true,       // 手機上是否要套用動畫 (預設是true)
+		    live:         true,       // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+		    callback:     function(box) {
+		      // 當每個要開始時, 呼叫這裡面的內容, 參數是要開始進行動畫特效的element DOM
+		    },
+		    scrollContainer: null // 可以設定成只套用在某個container中捲動才呈現, 不設定就是整個視窗
+		  }
+		);
+		wow.init();
+    </script>
+</head>
+<body id="about">
+	<nav>
+		<div class="mobile-nav">
+		    <div class="b-nav">
+		        <ul>
+		            <li><a class="b-link b-link--active">公司沿革</a></li>
+		            <li><a class="b-link" href="index.html#section-works">最新推案</a></li>
+		            <li><a class="b-link" href="project.html">建築作品</a></li>
+		            <li><a class="b-link" href="construction.html">營造事業</a></li>
+		            <li><a class="b-link" href="contact.html">聯絡</a></li>
+		            <li><a class="btn" href="#"><i class="ic_music-on"></i></a></li>
+		        </ul>
+		    </div>
+	        <!-- Burger-Icon -->
+	        <div class="b-container">
+		        <div class="b-menu">
+		            <div class="b-bun b-bun--top"></div>
+		            <div class="b-bun b-bun--mid"></div>
+		            <div class="b-bun b-bun--bottom"></div>
+		        </div>
+	          <!-- Burger-Brand -->
+	          <a href="index.html" class="b-brand">HOME</a>
+	        </div>
+		  </div>
+	</nav>
+	<div class="main">
+		<section id="page-about">
+			<div class="title">
+				<img src="image/img_title_about.png" class="img-responsive">
+			</div>
+			<div class="content">
+				<p></p>
+			</div>
+		</section>
+	</div>
+	<section id="section-footer">
+		<a href="index.html" class="footer-btn">
+			<img src="image/btn_home.png" class="img-responsive"/>
+		</a>
+		<a href="#" target="_blank" class="footer-btn">
+			<img src="image/btn_fb.png" class="img-responsive"/>
+		</a>
+		<p class="text-title">INFORMATION</p>
+		<hr/>
+		<p>如果您有任何問題，請不要猶豫與我們聯繫瞭解更多詳情</p>
+		<p><strong>東祿建築</strong>  台北市中山區中山北路二段126之3號9樓  <a href="tel:072159900" class="tel">07-2159900</a></p>
+		<a href="contact.html" class="btn-connection">
+			<img src="image/btn_footer_connection.png" class="img-responsive"/>
+		</a>
+		<p><small>COPYRIGHT © 2018 MARILYN INTERNATIONAL CO., LTD.    |    DESIGN BY +0513DESIGN X G8 UNITED INTERNATIONAL DESIGN CO., LTD.</small></p>
+	</section>
+
+	<script>
+		// Select all links with hashes
+		$('a[href*="#"]')
+			// Remove links that don't actually link to anything
+			.not('[href="#"]')
+			.not('[href="#0"]')
+			.click(function(event) {
+				// On-page links
+				if (
+					location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+					&& 
+					location.hostname == this.hostname
+					) {
+					// Figure out element to scroll to
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					// Does a scroll target exist?
+					if (target.length) {
+						// Only prevent default if animation is actually gonna happen
+						event.preventDefault();
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000, function() {
+							// Callback after animation
+							// Must change focus!
+						var $target = $(target);
+							$target.focus();
+							if ($target.is(":focus")) { // Checking if the target was focused
+								return false;
+							} else {
+								$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+								$target.focus(); // Set focus again
+							};
+						});
+					}
+				}
+			});
+		//# sourceURL=pen.js
+	</script>
+
+</body>
+</html>
