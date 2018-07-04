@@ -103,9 +103,24 @@ section {
 }
 
 #index .main {
-    background: url(../image/bg_index.png) no-repeat 50% bottom;
-    background-size: 100% auto;
+    background-image: url(../image/bg_index_1.png), url(../image/bg_index_2.png), url(../image/bg_index_3.png), url(../image/bg_index_4.png), url(../image/bg_index_5.png), url(../image/bg_index_6.png);
+    background-repeat: no-repeat;
+    background-size: 120% auto;
+    -webkit-animation: index_bg 15s linear infinite;
+    -moz-animation: index_bg 15s linear infinite;
+    -o-animation: index_bg 15s linear infinite;
+    animation: index_bg 15s linear infinite;
 }
+
+@keyframes index_bg {
+    0%, 100% {
+        background-position: 50% bottom, 60% bottom, 20% bottom, 50% bottom, 40% bottom, 90% bottom;
+    }
+    50% {
+        background-position: 90% bottom, 30% bottom ,40% bottom, 100% bottom, 0 bottom ,90% bottom;
+    }
+}
+
 
 #section-about {
 	min-height: 320px;
@@ -147,7 +162,8 @@ section {
 }
 
 #section-works .carousel-inner .item-block,
-#page-works .item-block {
+#page-project .item-block {
+    width: 100%;
 	display: inline-block;
 	height: 240px;
 	background-color: #8B7151;
@@ -158,19 +174,19 @@ section {
 }
 
 #section-works .carousel-inner .item-block:hover,
-#page-works .item-block:hover {
+#page-project .item-block:hover {
 	opacity: 1;
 }
 
 #section-works .carousel-inner .item-block .image,
-#page-works .item-block .image {
+#page-project .item-block .image {
     height: 175px;
     position: relative;
     overflow-y: hidden;
 }
 
 #section-works .carousel-inner .item-block .hover-text,
-#page-works .item-block .hover-text {
+#page-project .item-block .hover-text {
 	position: absolute;
 	display: block;
 	opacity: 0;
@@ -184,18 +200,18 @@ section {
 }
 
 #section-works .carousel-inner .item-block:hover .hover-text,
-#page-works .item-block:hover .hover-text {
+#page-project .item-block:hover .hover-text {
 	opacity: 1;
   	transition: all 0.6s ease-in-out;
 }
 
 #section-works .carousel-inner .item-block .hover-text h3,
-#page-works .item-block .hover-text h3 {
+#page-project .item-block .hover-text h3 {
 	margin: 0 0 15px;
 }
 
 #section-works .carousel-inner .item-block .hover-text .line,
-#page-works .item-block .hover-text .line {
+#page-project .item-block .hover-text .line {
 	display: block;
 	margin: 10px auto;
 	background-color: #FFFDE6;
@@ -204,19 +220,31 @@ section {
 }
 
 #section-works .carousel-inner .item-block .text,
-#page-works .item-block .text {
+#page-project .item-block .text {
 	padding: 10px;
 	height: 60px;
 }
 
 #section-works .carousel-inner .item-block .text p,
-#page-works .item-block .text p {
+#page-project .item-block .text p {
 	margin: 0;
     line-height: 22px;
 }
 
+#section-works .item-block .hover-text .text,
+#page-project .item-block .hover-text .text {
+    margin-top: -60px !important;
+    transition: all 0.6s ease-in-out;
+}
+
+#section-works .item-block:hover .hover-text .text,
+#page-project .item-block:hover .hover-text .text {
+    margin-top: -15px !important;
+    transition: all 0.6s ease-in-out;
+}
+
 #section-works .carousel-inner .image img,
-#page-works .image img {
+#page-project .image img {
 	width: auto;
     border: none;
     border-radius: 0;
@@ -224,9 +252,8 @@ section {
     padding: 0;
 }
 
-
-#section-works .carousel-control.left,
-#section-works .carousel-control.right {
+.carousel-control.left,
+.carousel-control.right {
 	background-image: none;
 }
 
@@ -256,10 +283,11 @@ section {
 #section-news ul {
 	margin: 20px auto;
 	max-width: 600px;
+    -webkit-padding-start: 0;
 }
 
 #section-news ul li {
-	border-bottom: 1px solid #E6E6E6;
+	border-bottom: 1px solid #bbbbbb;
 	padding: 10px;
 	letter-spacing: 2.5px;
 
@@ -308,8 +336,22 @@ section {
 /*about*/
 
 #about .main {
-    background: url(../image/bg_about.png) no-repeat 50% bottom;
-    background-size: 100% auto;
+    background-image: url(../image/bg_about_1.png),url(../image/bg_about_2.png),url(../image/bg_about_3.png);
+    background-repeat: no-repeat;
+    background-size: 120% auto;
+    -webkit-animation: about_bg 10s linear infinite;
+    -moz-animation: about_bg 10s linear infinite;
+    -o-animation: about_bg 10s linear infinite;
+    animation: about_bg 10s linear infinite;
+}
+
+@keyframes about_bg {
+    0%, 100% {
+        background-position: 40% bottom, 60% bottom, 10% bottom;
+    }
+    50% {
+        background-position: 90% bottom, 20% bottom ,40% bottom;
+    }
 }
 
 #page-about {
@@ -343,9 +385,24 @@ section {
 	min-height: 280px;
     padding-bottom: 60px;
 	text-align: center;
-    background: url(../image/bg_construction.png) no-repeat 50% bottom;
-    background-size: 100% auto;
+    background-image: url(../image/bg_construction.png);
+    background-repeat: no-repeat;
+    background-size: 120% auto;
+    -webkit-animation: construction_bg 10s linear infinite;
+    -moz-animation: construction_bg 10s linear infinite;
+    -o-animation: construction_bg 10s linear infinite;
+    animation: construction_bg 10s linear infinite;
 }
+
+@keyframes construction_bg {
+    0%, 100% {
+        background-position: 30% bottom;
+    }
+    50% {
+        background-position: 80% bottom;
+    }
+}
+
 
 #page-construction .content {	
 	display: block;
@@ -385,95 +442,32 @@ section {
 
 /*project*/
 
-#page-project {
-	padding-bottom: 60px;
-    background: url(../image/bg_about.png) no-repeat 50% bottom;
-    background-size: 100% auto;
-}
-
-#page-project .content {
-    margin: 60px auto;
-    max-width: 800px;
-}
-
-#page-project .item-block {
-	display: inline-block;
-	height: 240px;
-	background-color: #8B7151;
-    overflow: hidden;
-    color: #FFFDE6;
-    text-align: center;
-    margin: 0 2px 30px;
-    padding: 0;
-}
-
-#page-project .item-block:hover {
-	opacity: 1;
-}
-
-#page-project .item-block .image {
-    height: 175px;
-    position: relative;
-    overflow-y: hidden;
-}
-
-#page-project .item-block .hover-text {
-	position: absolute;
-	display: block;
-	opacity: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #8B7151;
-	text-align: center;
-	padding: 30px;
-	letter-spacing: 3px;
-  	transition: all 0.6s ease-in-out;
-}
-
-#page-project .item-block:hover .hover-text {
-	opacity: 1;
-  	transition: all 0.6s ease-in-out;
-}
-
-#page-project .item-block .hover-text h3 {
-	margin: 0 0 15px;
-}
-
-#page-project .item-block .hover-text .line {
-	display: block;
-	margin: 10px auto;
-	background-color: #FFFDE6;
-	width: 1px;
-	height: 20px;
-}
-
-#page-project .item-block .text {
-	padding: 10px;
-	height: 60px;
-}
-
-#page-project .item-block .text p {
-	margin: 0;
-    line-height: 22px;
-}
-
-#page-project .image img {
-	width: auto;
-    border: none;
-    border-radius: 0;
-    margin: 0 auto;
-    padding: 0;
-}
-
+#page-project,
 #page-projectpage {
-    padding-bottom: 60px;
-    background: url(../image/bg_contact.png) no-repeat 50% bottom;
-    background-size: 100% auto;
+	padding-bottom: 60px;
+    background-image: url(../image/bg_about_1.png),url(../image/bg_about_2.png),url(../image/bg_about_3.png),url(../image/bg_project.jpg);
+    background-repeat: no-repeat;
+    background-size: 120% auto;
+    -webkit-animation: project_bg 10s linear infinite;
+    -moz-animation: project_bg 10s linear infinite;
+    -o-animation: project_bg 10s linear infinite;
+    animation: project_bg 10s linear infinite;
 }
 
+@keyframes project_bg {
+    0%, 100% {
+        background-position: 40% bottom, 60% bottom, 10% bottom, 0% top;
+    }
+    50% {
+        background-position: 90% bottom, 20% bottom ,40% bottom, 100% top;
+    }
+}
+
+
+#page-project .content,
 #page-projectpage .content {
     margin: 60px auto;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 #page-projectpage .content .text {
@@ -488,8 +482,22 @@ section {
 /*contact*/
 
 #contact .main {
-    background: url(../image/bg_contact.png) no-repeat 50% bottom;
-    background-size: 100% auto;
+    background-image: url(../image/bg_contact.png);
+    background-repeat: no-repeat;
+    background-size: 120% auto;
+    -webkit-animation: contact_bg 10s linear infinite;
+    -moz-animation: contact_bg 10s linear infinite;
+    -o-animation: contact_bg 10s linear infinite;
+    animation: contact_bg 10s linear infinite;
+}
+
+@keyframes contact_bg {
+    0%, 100% {
+        background-position: 30% bottom;
+    }
+    50% {
+        background-position: 80% bottom;
+    }
 }
 
 #page-contact {
@@ -666,6 +674,20 @@ section {
 @media (min-width: 1400px) {
 }
 
+@media (max-width: 1024px) {
+
+    body p,
+    .news-title {
+        font-size: 14px;
+    }
+
+    #section-works .carousel-control {
+        width: 0;
+    }
+
+}
+
+
 @media (max-width: 768px) {
 
 	.btn_scroll {
@@ -702,6 +724,40 @@ section {
     padding: 15px 30px;
 }
 
+.news-popup .modal-dialog {
+    width: 100%;
+    max-width: 760px;
+}
+
+.news-popup .carousel-inner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news-popup .carousel-control {
+    width: 5%;
+}
+
+.news-popup .glyphicon-chevron-right:before {
+    width: 26px;
+    height: 40px;
+    display: block;
+    content: "";
+    background: url(../image/btn_next_w.png) no-repeat 50% 50%;
+    background-size: 26px auto;
+}
+
+.news-popup .glyphicon-chevron-left:before {
+    width: 26px;
+    height: 40px;
+    display: block;
+    content: "";
+    background: url(../image/btn_prev_w.png) no-repeat 50% 50%;
+    background-size: 26px auto;
+}
+
+
+
 .works-popup .modal-content {
     background: url(../image/bg_popup.png) no-repeat 50% 50%,rgba(139,113,81,1);
     background-size: 100% auto;;
@@ -720,6 +776,7 @@ section {
 }
 
 .works-popup .modal-body .text {
+    font-size: 14px;
     line-height: 16px;
     vertical-align: bottom;
     border-left: 2px solid #FFF;

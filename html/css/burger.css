@@ -158,6 +158,7 @@
 .b-link {
   background: 0 0;
   color: #8B7151;
+  letter-spacing: 2px;
   transition: all .4s ease;
   font-size: 15px;
   width: auto;
