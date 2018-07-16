@@ -45,47 +45,31 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/burger.js"></script>
-	<script src="js/wow.js"></script>
-	<script>
-        var wow = new WOW(
-		  {
-		    boxClass:     'wow',      // 要套用WOW.js縮需要的動畫class(預設是wow)
-		    animateClass: 'animated', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
-		    offset:       200,          // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
-		    mobile:       true,       // 手機上是否要套用動畫 (預設是true)
-		    live:         true,       // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
-		    callback:     function(box) {
-		      // 當每個要開始時, 呼叫這裡面的內容, 參數是要開始進行動畫特效的element DOM
-		    },
-		    scrollContainer: null // 可以設定成只套用在某個container中捲動才呈現, 不設定就是整個視窗
-		  }
-		);
-		wow.init();
-    </script>
+	<script src="js/fadein.js"></script>
 </head>
 <body id="contact">
 	<nav>
 		<div class="mobile-nav">
-		    <div class="b-nav">
-		        <ul>
-		            <li><a class="b-link" href="about.html">公司沿革</a></li>
-		            <li><a class="b-link" href="index.html#section-works">最新推案</a></li>
-		            <li><a class="b-link" href="project.html">建築作品</a></li>
-		            <li><a class="b-link" href="construction.html">營造事業</a></li>
-		            <li><a class="b-link b-link--active">聯絡</a></li>
-		            <li><a class="btn" href="#"><i class="ic_music-on"></i></a></li>
-		        </ul>
-		    </div>
-	        <!-- Burger-Icon -->
-	        <div class="b-container">
-		        <div class="b-menu">
-		            <div class="b-bun b-bun--top"></div>
-		            <div class="b-bun b-bun--mid"></div>
-		            <div class="b-bun b-bun--bottom"></div>
-		        </div>
-	          <!-- Burger-Brand -->
-	          <a href="index.html" class="b-brand">HOME</a>
-	        </div>
+			<div class="b-nav">
+				<ul>
+					<li><a class="b-link link" href="about.html">公司沿革</a></li>
+					<li><a class="b-link link" href="index.html#section-works">最新推案</a></li>
+					<li><a class="b-link link" href="project.html">建築作品</a></li>
+					<li><a class="b-link link" href="construction.html">營造事業</a></li>
+					<li><a class="b-link b-link--active">聯絡</a></li>
+					<li><a class="btn" href="#"><i class="ic_music-on"></i></a></li>
+				</ul>
+			</div>
+			<!-- Burger-Icon -->
+			<div class="b-container">
+				<div class="b-menu">
+					<div class="b-bun b-bun--top"></div>
+					<div class="b-bun b-bun--mid"></div>
+					<div class="b-bun b-bun--bottom"></div>
+				</div>
+			  <!-- Burger-Brand -->
+			  <a href="index.html#section-about" class="b-brand">HOME</a>
+			</div>
 		  </div>
 	</nav>
 	<div class="main">
@@ -109,10 +93,10 @@
 						<input type="email" class="form-control" id="InputEmail1">
 					</div>
 					<div class="form-group col-xs-12 col-sm-6">
-						<a href="#" target="_blank" class="contact-btn">
+						<a href="http://facebook.com" target="_blank" class="contact-btn">
 							<img src="image/btn_fb_brw.png" class="img-responsive"/>
 						</a>
-						<a href="#" class="contact-btn">
+						<a href="index.html" class="contact-btn">
 							<img src="image/btn_home_brw.png" class="img-responsive"/>
 						</a>
 					</div>

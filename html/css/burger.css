@@ -1,10 +1,6 @@
 .mobile-nav {
-    top: 0;
-    position: absolute;
-}
-
-#index .mobile-nav {
-    top: 20px;
+  top: 0;
+  position: absolute;
 }
 
 .b-brand, 
@@ -13,7 +9,7 @@
 	font-weight: 700;
 	margin-left: 0;
 	text-decoration: none;
-	font-family: "Roboto Slab", serif;
+  font-family: 'Lora', 'cwTeXMing', serif !important;
 	text-transform: uppercase;
 }
 
@@ -78,9 +74,6 @@
     top: 66px;
 }
 
-#index .b-nav {
-    top: 86px;
-}
 
 .b-nav:not(.open) {
   animation-duration: 4s;
@@ -90,9 +83,6 @@
     top: 66px;
 }
 
-#index .b-nav:not(.open) {
-    top: 86px;
-}
 
 .b-nav {
 	animation-duration: .4s;
@@ -295,4 +285,39 @@
 	background-size: 24px auto;
 	width: 24px;
 	height: 24px;
+}
+
+
+
+@media (max-width: 640px) {
+  .b-menu {
+      height: 44px;
+      padding: 10px;
+      width: 44px;
+      left: 70px;
+  }
+
+  .b-bun--bottom,
+  .b-bun--mid,
+  .b-bun--top {
+      height: 2px;
+      width: 24px;
+  }
+
+  .b-brand {
+      padding: 10px 12px 13px 11px;
+  }
+
+  .b-nav {
+    width: 114px;
+    top: 44px;
+  }
+
+  .b-link {
+    font-size: 14px;
+  }
+
+  .b-nav li {
+    padding: 14px 15px;
+  }
 }
